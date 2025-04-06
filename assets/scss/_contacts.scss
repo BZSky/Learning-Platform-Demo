@@ -1,0 +1,74 @@
+@use "_variables" as v;
+@use "_mixins" as m;
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  @media (width <= 768px) {
+    flex-flow: column nowrap;
+  }
+
+  .contact-form,
+  .contact-info {
+    flex: 1 1 100%;
+    width: 100%;
+
+    @media (width >= 769px) {
+      flex: 1 1 50%;
+      max-width: 50%;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    label {
+      font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      align-self: start;
+      background: #007acc;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background: #005fa3;
+      }
+    }
+  }
+
+  .contact-info {
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .map-section {
+      width: 100%;
+      max-width: 800px;
+      margin: 1rem auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+    }
+  }
+}

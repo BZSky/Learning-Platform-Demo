@@ -1,0 +1,79 @@
+[
+  {
+    "title": "JavaScript Basics",
+    "instructor": "John Doe",
+    "difficulty": "Beginner",
+    "image": "assets/images/js-basics.png",
+    "description": "Learn the fundamentals of JavaScript, including variables, functions, loops, and DOM manipulation. Perfect for beginners looking to start web development."
+  },
+  {
+    "title": "Advanced CSS Techniques",
+    "instructor": "Jane Smith",
+    "difficulty": "Intermediate",
+    "image": "assets/images/css-advanced.png",
+    "description": "Take your CSS skills to the next level with flexbox, grid layouts, animations, and best practices for responsive design."
+  },
+  {
+    "title": "Full-Stack Development",
+    "instructor": "Mark Wilson",
+    "difficulty": "Advanced",
+    "image": "assets/images/fullstack.png",
+    "description": "Master full-stack web development with a hands-on approach, covering frontend (React), backend (Node.js, Express), and databases (MongoDB)."
+  },
+  {
+    "title": "React for Beginners",
+    "instructor": "Emily Davis",
+    "difficulty": "Beginner",
+    "image": "assets/images/react-basics.png",
+    "description": "A beginner-friendly guide to building modern web applications using React, including components, state management, and hooks."
+  },
+  {
+    "title": "Node.js and Express",
+    "instructor": "David Brown",
+    "difficulty": "Intermediate",
+    "image": "assets/images/node-express.jpg",
+    "description": "Learn how to create backend applications using Node.js and Express, including routing, middleware, and RESTful APIs."
+  },
+  {
+    "title": "Python for Data Science",
+    "instructor": "Laura Martinez",
+    "difficulty": "Advanced",
+    "image": "assets/images/python-ds.jpg",
+    "description": "Dive into data science with Python! Covering NumPy, Pandas, Matplotlib, and machine learning basics with Scikit-Learn."
+  },
+  {
+    "title": "UX/UI Design Principles",
+    "instructor": "Sophia Taylor",
+    "difficulty": "Beginner",
+    "image": "assets/images/ux-ui.jpg",
+    "description": "Learn the fundamental principles of UX/UI design, wireframing, prototyping, and usability testing for creating intuitive digital experiences."
+  },
+  {
+    "title": "Cybersecurity Essentials",
+    "instructor": "Michael Johnson",
+    "difficulty": "Intermediate",
+    "image": "assets/images/cybersecurity.png",
+    "description": "Understand the core concepts of cybersecurity, including network security, encryption, and ethical hacking techniques."
+  },
+  {
+    "title": "Machine Learning with Python",
+    "instructor": "Robert White",
+    "difficulty": "Advanced",
+    "image": "assets/images/ml-python.jpg",
+    "description": "Explore supervised and unsupervised machine learning techniques using Python, including deep learning with TensorFlow."
+  },
+  {
+    "title": "SQL for Data Analysis",
+    "instructor": "Jessica Green",
+    "difficulty": "Beginner",
+    "image": "assets/images/sql-analysis.png",
+    "description": "Learn SQL fundamentals to extract, manipulate, and analyze data efficiently from relational databases."
+  },
+  {
+    "title": "Django Web Development",
+    "instructor": "Daniel Harris",
+    "difficulty": "Intermediate",
+    "image": "assets/images/django.png",
+    "description": "Build dynamic and scalable web applications with Django, covering models, views, templates, and authentication."
+  }
+]

@@ -1,0 +1,53 @@
+@use "sass:color";
+@use "gallery";
+@use "slider";
+@use "featured-course";
+@use "modal";
+@use "header";
+@use "footer";
+@use "contacts";
+@use "variables" as v;
+@use "mixins" as m;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: v.$text-color;
+  background-color: v.$background-color;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+  &.loaded {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .home-page & {
+    overflow: hidden;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+  @include m.flex-center;
+
+  flex-direction: column;
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+button {
+  @include m.button-style(v.$primary-color, white);
+}

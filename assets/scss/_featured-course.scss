@@ -1,0 +1,46 @@
+.featured-course {
+  position: absolute;
+  bottom: 25vh;
+  right: 20vh;
+  background: rgb(255 255 255 / 80%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+  min-height: 200px;
+  z-index: 5;
+
+  .card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  }
+
+  .card img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+@media (width <= 768px) {
+  .featured-course {
+    bottom: 20vh;
+    right: 5vh;
+    padding: 10px;
+    max-width: 300px;
+
+    .card {
+      padding: 0;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 2px;
+    }
+  }
+}
