@@ -5,7 +5,10 @@ export default function loadHeader() {
       document.body.insertAdjacentHTML("afterbegin", data);
     })
     .then(() => {
-      const currentPage = window.location.pathname.split("/").pop();
+      let currentPage = window.location.pathname.split("/").pop();
+      if (currentPage === "") {
+        currentPage = "index.html";
+      }
       document.querySelectorAll("nav a").forEach((link) => {
         if (link.getAttribute("href") === currentPage) {
           link.classList.add("active");

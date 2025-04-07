@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const coursesContainer = document.getElementById("courses-container");
   const paginationContainer = document.getElementById("pagination");
   const showMoreBtn = document.getElementById("show-more");
+  showMoreBtn.style.display = "none";
   const filterSelect = document.getElementById("filter");
   const sortSelect = document.getElementById("sort");
   const urlParams = new URLSearchParams(window.location.search);
@@ -122,10 +123,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function updatePaginationButtons() {
     document.querySelectorAll(".pagination-btn").forEach((btn, index) => {
       btn.classList.toggle("active", index + 1 === currentPage);
-      if (paginationContainer.firstElementChild.classList.contains("active")) {
-        showMoreBtn.style.display = "none";
-      }
     });
+    paginationContainer.firstElementChild.classList.contains("active")
+      ? (showMoreBtn.style.display = "none")
+      : (showMoreBtn.style.display = "block");
   }
 
   showMoreBtn.addEventListener("click", () => {

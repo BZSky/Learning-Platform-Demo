@@ -32,23 +32,15 @@ npm run sass-dev
 
 #### Start a local development server:
 
-If using `live-server`, run:
+Using `http-server`
+
+Run:
 
 ```bash
-npm live-server
+npm run serve
 ```
 
-If using `http-server`, install it first:
-
-```bash
-npm install --save-dev http-server
-```
-
-Then run:
-
-```bash
-npm http-server
-```
+Then open http://127.0.0.1:8080
 
 ### 4. Build for production
 
